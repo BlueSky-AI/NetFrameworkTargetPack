@@ -25,7 +25,7 @@ dism.exe /online /enable-feature /featurename:NetFX3 /All /LimitAccess
 坐等完成。
 
 从VS2019提取并安装 .NET 4/.NET 4.5/.NET 4.5.1 目标包
-我已经提取了包上传了Github，下载可以跳过第一步 →直达地址 https://github.com/Delevin888/NetFrameworkTargetPack
+我已经提取了包上传了Github，下载可以跳过第一步 →直达地址 https://github.com/BlueSky-AI/NetFrameworkTargetPack
 
 下载 Visual Studio 2019 的安装包，不要急着打开，进入目录。
 .\vs_enterprise.exe --layout c:\vslayout --add Microsoft.Net.4.TargetingPack --add Microsoft.Net.4.5.TargetingPack --add Microsoft.Net.4.5.1.TargetingPack --lang zh-CN
@@ -37,8 +37,10 @@ https://docs.microsoft.com/en-us/visualstudio/install/workload-component-id-vs-b
 
 c:\vslayout\Microsoft.Net.4.TargetingPack...
 netfx_dtp.msi MSIFASTINSTALL=7 EXTUI=1
+
 c:\vslayout\Microsoft.Net.4.5.TargetingPack...
 netfx45_dtp.msi MSIFASTINSTALL=7 EXTUI=1
+
 c:\vslayout\Microsoft.Net.4.5.1.TargetingPack...
 netfx_451mtpack.msi MSIFASTINSTALL=7 EXTUI=1
-重启Visual Studio 2022，搞定，收工。
+重启Visual Studio 2022
